@@ -1,9 +1,93 @@
 .main{
     margin: auto;
-  width: 60%;
-  border: 3px solid #73AD21;
+  width: 50%;
+  border: 3px solid black;
   padding: 10px;
   text-align: center;
+  /* background-color: hotpink; */
+  box-shadow: 5px 5px 5px #888888;
+  border-radius: 20px;
 }
 
-.result{}
+.button{
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.buttonReset{
+  border-radius: 10px;
+}
+
+.button-container{
+  margin-top: 10px;
+}
+
+.buttonCount{
+  border-radius: 5px;
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 8px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+
+#footer{
+  margin: auto;
+  margin-top: 20px;
+  height: 80%;
+  width: 50%;
+  border: 3px solid black;
+  padding: 10px;
+  text-align: center;
+  background-color: hotpink;
+  border-radius: 20px;
+}
+
+img {
+  padding: 5px;
+  width: 150px;
+}
+
+/* body{} */
+
+.row::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#quote{
+  font-size: 1.5em;
+}
+
+.column{
+  float: left;
+  padding: 10px;
+
+}
+
+.left{
+  width: 10%;
+}
+
+.right{
+  width: 90%;
+  padding-right: 10%;
+}
+
+*{
+  box-sizing: border-box;
+}

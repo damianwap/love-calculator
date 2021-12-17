@@ -4,24 +4,57 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        
+    </style>
     <title>Love Calculator v.0.0.0.0.0.0.1</title>
 </head>
 <body>
     <script src="function.js">
     </script>
+    <div class="top">
+        
+    </div>
     <div class="main">
-        <h1>Love Calculator v.0.0.0.0.0.0.1</h1>
+        <div class="row">
+            <div class="column left">
+                <button class="button buttonReset" onclick="reset()">RESET</button>
+            </div>
+            <div class="column right">
+                <h1>Love Calculator v.0.0.0.0.0.0.1</h1>
+            </div>
+        </div>
         <div>
-            <label for="name1">Nama anda: </label><br>
-            <input type="text" id="name1"><br><br>
-            <label for="name2">Nama gebetan:</label><br>
-            <input type="text" id="name2"><br><br>
+            <div class="nama1">
+                <label for="name1">Nama anda: </label><br>
+                <input type="text" id="name1" placeholder="Adam"><br><br>
+                <label for="">Laki-laki</label>
+                <input type="radio" id="laki" name="jenis_kelamin1" value="laki-laki">
+                <label for="">Perempuan</label>
+                <input type="radio" id="perempuan" name="jenis_kelamin1" value="perempuan">
+            </div>
+            <div>
+                <img src="https://pngimg.com/uploads/love/love_PNG11.png" alt="Love calculator">
+            </div>
+            <div class="nama2">
+                <label for="name2">Nama pasangan anda:</label><br>
+                <input type="text" id="name2" placeholder="Hawa"><br><br>
+                <label for="">Laki-laki</label>
+                <input type="radio" id="laki" name="jenis_kelamin2" value="laki-laki">
+                <label for="">Perempuan</label>
+                <input type="radio" id="perempuan" name="jenis_kelamin2" value="perempuan">
+            </div>
         </div>
+        <hr style="width: 50%;">
         <div class="button-container">
-            <button onclick="hitung()">Start</button>
+            <button class="buttonCount" onclick="hitung()">Hitung</button>
         </div>
+        
+    </div>
+    <div id="footer">
         <div class="result">
+            <p id="quote"><i>There's only one happiness in this life, to <b>love</b> and be <b> loved</b>. </i></p>
             <h1 id="hasil"></h1>
             <p id="keterangan"></p>
         </div>
